@@ -43,22 +43,29 @@ int leerEntero(const char* mensaje) {
     return r;
 }
 
+//Funcion para calcular la suma de dos numeros
+float calcularSuma(float a, float b) {
+    return a + b;
+}
+
 int main(int argc, char *argv[]) {
     printf("----------INICIANDO PROGRAMA----------\n");
     printf("--------------------------------------\n");
-
+	float numero1 = 0.0;
+    float numero2 = 0.0;
     printf("----------PASO 1----------\n");
     printf("----------LECTURA DE DATOS----------\n");
-
+	numero1 = leerFloat("Ingrese el numero 1: ");
+    numero2 = leerFloat("Ingrese el numero 2: ");
     printf("----------PASO 2----------\n");
-    printf("----------PROCESAR DATOS----------\n");
-
+    printf("----------PROCESANDO DATOS----------\n");
+	float suma = calcularSuma(numero1, numero2);
     printf("----------PASO 3----------\n");
     printf("----------SALIDAS DE DATOS----------\n");
-
+	imprimirFloat("El resultado de la suma es: ",suma);
     printf("----------FIN DEL PROGRAMA----------\n");
     printf("--------------------------------------\n");
-
+	
     return 0;
 }
 
